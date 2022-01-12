@@ -74,8 +74,9 @@ html, body {
   // This is the logo at the top of the ToC
   .logo {
     display: block;
-    max-width: 100%;
-    margin-bottom: $logo-margin;
+    max-width: 75%;
+    margin-top: 20px;
+    margin-left: 20px;
   }
 
   &>.search {
@@ -92,6 +93,10 @@ html, body {
       outline: none;
       color: $nav-text;
       border-radius: 0; /* ios has a default border radius */
+    }
+
+    ::placeholder {
+          color: $search-box-placeholder-color;
     }
 
     &:before {
@@ -200,7 +205,6 @@ html, body {
   padding: 0 $nav-padding 0 $nav-padding;
   display: block;
   overflow-x: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
   text-decoration: none;
   color: $nav-text;
@@ -343,6 +347,10 @@ html, body {
   // the div is the tocify hidden div for placeholding stuff
   &>h1, &>h2, &>div {
     clear:both;
+  }
+
+  img {
+    width: 100%;
   }
 
   h1 {
